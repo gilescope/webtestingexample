@@ -7,5 +7,5 @@
     "phantom":"*",
     "casper": "*"
   },
-  "private": true
+  "private": false
 }
