@@ -1,7 +1,7 @@
 {
   "name": "Tester",
   "scripts" : {
-    "start": "node_modules/casperjs/bin/casperjs test Tests.js"
+    "test": "node_modules/casperjs/bin/casperjs test Tests.js"
   },
   "dependencies": {
     "phantom":"*",
