@@ -1,0 +1,11 @@
+{
+  "name": "Tester",
+  "scripts" : {
+    "start": "node_modules/casperjs/bin/casperjs test Tests.js"
+  },
+  "dependencies": {
+    "phantom":"*",
+    "casper": "*"
+  },
+  "private": true
+}
