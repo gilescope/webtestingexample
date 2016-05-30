@@ -4,8 +4,8 @@
     "test": "./node_modules/casperjs/bin/casperjs test Tests.js"
   },
   "dependencies": {
-    "phantom":"*",
-    "casper": "*"
+    "phantomjs":"*",
+    "casperjs": "*"
   },
   "private": false
 }
