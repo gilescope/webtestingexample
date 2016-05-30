@@ -57,7 +57,7 @@ casper.test.begin('Membership tests', 2, function(test) {
         "use strict";
         test.assertTitle("Membership Packages - CrossFit Blackwater");
 
-        this.clickLabel('Get Started', 'a');
+        this.clickLabel('Get Started', 'span');
 
     }, true);
 
