@@ -1,11 +1,12 @@
 {
   "name": "Tester",
+  "_nodeVersion": "4.2.2",
   "scripts" : {
     "test": "./node_modules/casperjs/bin/casperjs test Tests.js"
   },
   "dependencies": {
-    "phantomjs":"*",
-    "casperjs": "*"
+    "phantomjs":"2.1.1",
+    "casperjs": "1.1.1"
   },
   "private": false
 }

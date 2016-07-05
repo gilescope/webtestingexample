@@ -26,24 +26,24 @@ casper.test.begin('Can book a free taster', 5, function(test) {
     }, true);
 
     casper.then(function() {
-        test.assertEquals('https://crossfitblackwater.com/free-gym-taster-witham/',this.getCurrentUrl());
+        test.assertEquals(this.getCurrentUrl(), 'https://crossfitblackwater.com/free-gym-taster-witham/');
 
         this.clickLabel('Book my free taster!', 'span');
     });
 
     casper.then(function() {
-        test.assertEquals('https://goteamup.com/p/174765-blackwater-health-and-fit/auth/9096/',this.getCurrentUrl());
+        test.assertEquals(this.getCurrentUrl(), 'https://goteamup.com/p/174765-blackwater-health-and-fit/auth/9096/');
         this.back();
     });
 
     casper.then(function() {
-        test.assertEquals('https://crossfitblackwater.com/free-gym-taster-witham/',this.getCurrentUrl());
+        test.assertEquals(this.getCurrentUrl(), 'https://crossfitblackwater.com/free-gym-taster-witham/');
 
         this.clickLabel('Already sold? See Membership Deals', 'span');
     });
 
     casper.then(function() {
-        test.assertEquals('https://crossfitblackwater.com/membership/',this.getCurrentUrl());
+        test.assertEquals(this.getCurrentUrl(), 'https://crossfitblackwater.com/membership/');
     });
 
     casper.run(function(){
@@ -58,12 +58,10 @@ casper.test.begin('Membership tests', 2, function(test) {
         test.assertTitle("Membership Packages - CrossFit Blackwater");
 
         this.clickLabel('Get Started', 'span');
-
     }, true);
 
     casper.then(function() {
-        console.log('clicked ok, new location is ' + this.getCurrentUrl());
-        test.assertEquals('https://goteamup.com/w174765/p/174765-blackwater-health-and-fit/memberships/',this.getCurrentUrl());
+        test.assertEquals(this.getCurrentUrl(), 'https://goteamup.com/w174765/p/174765-blackwater-health-and-fit/memberships/');
     });
 
     casper.run(function(){
