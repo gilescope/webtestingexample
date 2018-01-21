@@ -61,7 +61,7 @@ casper.test.begin('Membership tests', 2, function(test) {
     }, true);
 
     casper.then(function() {
-        test.assertTrue(this.getCurrentUrl().startsWith('https://goteamup.com/w174765/p/174765-blackwater-health-and-fit/memberships/'));
+        test.assertEquals(this.getCurrentUrl(), 'https://goteamup.com/w174765/p/174765-blackwater-health-and-fit/memberships/20984/');
     });
 
     casper.run(function(){
