@@ -1,11 +1,11 @@
 {
   "name": "Tester",
   "_nodeVersion": "6.2.2",
-  "scripts" : {
-    "test": "./node_modules/casperjs/bin/casperjs test Tests.js"
+  "scripts": {
+    "test": "./node_modules/casperjs/bin/casperjs test MetalTests.js Tests.js"
   },
   "dependencies": {
-    "phantomjs-prebuilt":"2.1.7",
+    "phantomjs-prebuilt": "2.1.7",
     "casperjs": "1.1.1"
   },
   "private": false
