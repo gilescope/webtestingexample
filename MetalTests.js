@@ -40,10 +40,11 @@ casper.test.begin('Can book a free taster', 5, function(test) {
         test.assertEquals(this.getCurrentUrl(), 'http://metalminnie.com/shop/silver/items/CASED-VICTORIAN-9CT-GOLD-PROPELLING-MECHANICAL-PENCIL-S1386245773114.html#t');
         this.fill('form[action="https://www.paypal.com/cgi-bin/webscr"]', { }, true);
     });
-
+    casper.then(function(){
+        casper.wait(3000, function(){});
+    });
     casper.then(function() {
-        test.assertEquals(this.getCurrentUrl(), "https://www.paypal.com/cgi-bin/webscr");
-        //test.assertEquals(this.getCurrentUrl().lastIndexOf('https://www.paypal.com/webapps/shoppingcart/error'), -2);
+        test.assertHttpStatus(200);
     });
 
     casper.run(function(){
